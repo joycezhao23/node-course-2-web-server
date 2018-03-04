@@ -60,6 +60,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 //res.send([body]): Sends the HTTP response.
 app.get('/bad', (req, res) => {
   res.send({
